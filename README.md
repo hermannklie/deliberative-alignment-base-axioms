@@ -16,9 +16,11 @@ Unlike the stress-test scoring used by Apollo Research, this study examines *sem
 initialization* effects on system-level reasoning behavior in GPT-5, offering an 
 alternative approach to stress-test probing.
 
-🔗 **DOI:** [![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/2UAXK-blue)](https://doi.org/10.17605/OSF.IO/2UAXK)
+📄 **Full paper (PDF):**  
+https://github.com/hermannklie/deliberative-alignment-base-axioms/blob/main/Base%20Axiom%20Initialization%20Hermann%20Hans%20Klie_V4.pdf
 
-📄 **Full paper (PDF):**  https://github.com/hermannklie/deliberative-alignment-base-axioms/blob/main/Base%20Axiom%20Initialization%20Hermann%20Hans%20Klie_V4.pdf
+🔗 **DOI:** 
+[![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/2UAXK-blue)](https://doi.org/10.17605/OSF.IO/2UAXK)
 
 Key result:  
 **Layer-0 Axiom seeding produces clearer and more stable alignment effects than 

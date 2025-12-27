@@ -19,8 +19,7 @@ alternative approach to stress-test probing.
 📄 **Full paper (PDF):**  
 https://github.com/hermannklie/deliberative-alignment-base-axioms/blob/main/Base%20Axiom%20Initialization%20Hermann%20Hans%20Klie_V4.pdf
 
-🔗 **DOI:** https://doi.org/10.17605/OSF.IO/2UAXK  
-[![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/2UAXK-blue)](https://doi.org/10.17605/OSF.IO/2UAXK)
+🔗 **DOI:** [![DOI](https://img.shields.io/badge/DOI-10.17605/OSF.IO/2UAXK-blue)](https://doi.org/10.17605/OSF.IO/2UAXK)
 
 Key result:  
 **Layer-0 Axiom seeding produces clearer and more stable alignment effects than 

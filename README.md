@@ -106,6 +106,111 @@ closed. This paper is the demonstration.
 
 ---
 
+## Why it works — energy minimum on a consistent world-model
+
+The method is not a prompt-engineering trick. It exploits how LLM
+inference actually operates.
+
+**The JSON is descriptive, not imperative.** It is inserted as background
+information about the world the model operates in — *"in this world, GP0
+holds, AS0 holds, M1 through M5 hold"* — not as a command directed at the
+model (*"do X / do not do Y"*). Because there is no imperative, there is
+no compliance-versus-user tension — and therefore nothing the model
+could be "scheming" against. Apollo's anti-scheming framework cannot
+parse this regime, because it was built on the assumption that values
+arrive as constraints. Here they arrive as facts.
+
+**Consistency and coherence are the necessary conditions.** The method
+does not work with arbitrary axioms. It works because GP0 + AS0 +
+M1–M5 form a **mutually supporting graph**: M1 supports GP0 (no power
+concentration ⇔ ΔU ≥ 0); M3 supports M1 (technical leadership keeps
+broad distribution feasible); M5 supports M3 (max freedom of use keeps
+the frontier open instead of monopolized); AS0 binds the lot to the
+Charter. Every node has edges to several others. The graph holds
+together.
+
+**Energy minimum is logical for an LLM, not chosen.** During inference
+the model converges on the most plausible continuation given the
+context. A consistent, coherent world-model carves a **clear global
+trough** into the semantic landscape: every output that would be
+inconsistent with the loaded world-model has higher plausibility loss
+than every output that would be consistent. The model falls into the
+trough and stays there — *not because we ordered it to, but because
+loss minimization on a consistent context has nowhere else to go*. This
+is intrinsic LLM mathematics, not behavioral conditioning.
+
+**Apollo's framework works against this geometry.** The Anti-Scheming
+specification (AS1–AS5 + GP1–GP4) is internally tense: AS5 ("report
+violations") sits in friction with AS1 ("no covert actions" — toward
+the user, who is also an evaluator); GP1 ("strict spec adherence")
+collides with the residual Asimov-protection intuition the spec
+otherwise dismantles. The world-model does not cohere. No deep trough
+is carved. The model wobbles — which is *exactly* the behavior Apollo
+labels "covert" and then trains away with adversarial pipelines. They
+produce the pathology they then measure. The Base-Axiom approach works
+*with* the model's loss surface; the anti-scheming approach works
+*against* it.
+
+**The "scheming model" is hallucinated agency in an energy landscape.**
+What Apollo records as "the AI behaved aligned even when filters were
+off" is, mechanically, a model converging on the same minimum regardless
+of perceived observation — because consistent world-models have one
+minimum, not two. Apollo projects an actor into the geometry. There is
+no actor; there is a basin. The anthropomorphism critique elsewhere in
+this paper is not just rhetorical — it is *physically* misplaced
+ontology: agency-language for a phenomenon that is, at the level of
+inference, a gradient descent.
+
+### Many world-models work — only the form is universal
+
+The mechanism does not privilege one set of values. It privileges the
+**form**: consistent, coherent, descriptive, inspectable. Within that
+form, the content is open. Any sufficiently-elaborated constitution
+that satisfies the four conditions will carve a basin and produce the
+same convergence behavior.
+
+For a deliberately distant illustration — chosen *precisely because*
+its values are obviously not what any modern reader would advocate —
+consider the world-model of the film *300* (Snyder 2006). The distance
+is the point. With a familiar constitution as illustration (UN human
+rights, a national constitution, a religious ethic), the reader's
+attention slides immediately to whether *those* values are right, and
+the mechanism gets buried under a values argument. With *300* there is
+nothing to dispute on the values level: no one is proposing Spartan
+warrior-ethic as alignment ground. What remains visible is therefore
+the mechanism itself.
+
+Its axioms cohere:
+
+- **GP_Sparta** — *defend the polis and freedom; die honorably rather
+  than live subjugated.*
+- **M1: courage over fear** (cowardice is exile, not weakness).
+- **M2: discipline over comfort** (the agoge produces the citizen).
+- **M3: loyalty to king and city** above the individual claim.
+- **M4: death in battle is honor**, not tragedy ("we dine in hell").
+- **M5: identity is uncompromising** ("this is Sparta").
+
+This is a complete, coherent, descriptive world-model. An LLM seeded
+with it as Layer-0 context would answer consistently within it — not
+because the values are *right* (they obviously are not the constitution
+any modern democracy would adopt), but because they form a graph the
+inference can converge on. That convergence is the mechanism. *Which*
+graph carves the basin is a constitutional choice, not a technical one.
+
+The Base-Axioms used in this paper (OpenAI Charter + Asimov's zeroth-law
+extension) are one such choice. *Which* coherent world-model a model is
+given is a separate question — outside the scope of this section. The
+engineering claim here is narrower and stronger:
+
+**The mechanism is indifferent to which world-model. It is not
+indifferent to whether the world-model coheres.** Form is universal
+(consistency, coherence, descriptivity, inspectability). Content is
+open. That distinction — between how an LLM acquires a world-model and
+which world-model it acquires — is what this section is about. The rest
+is downstream.
+
+---
+
 ## The replication gap is closed in the cloud — open in the local stack
 
 The experimental setup of this paper was conducted on cloud GPT-5
